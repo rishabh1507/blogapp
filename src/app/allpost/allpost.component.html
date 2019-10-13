@@ -1,0 +1,17 @@
+<app-sidenav></app-sidenav>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let k of alluser">
+      <div class="card border-primary">
+        <div class="card-header">
+          {{k.title}}<a routerLinkActive="active" routerLink='/fullpost'
+            class="float-right d-inline-flex share nav-link"><i class="fas fa-share-alt text-primary"></i></a>
+        </div>
+        <p class="card-body">{{k.body1}}</p>
+        <!-- <a class="float-right nav-link" routerLinkActive="active" routerLink='/fullpost'>Read more <i
+            class="fas fa-angle-double-right"></i></a> -->
+      </div>
+    </div>
+  </div>
+</div>
